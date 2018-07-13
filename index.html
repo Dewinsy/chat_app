@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title> CHAT APP</title>
+        <link rel = "stylesheet" href = "chat.css">
+        <script src = "chat.js"></script>
+        
+    </head> 
+    
+    <body>
+        
+        <!--
+        <h2 id="chat"> MY CHATS </h2>
+        
+        <div class="message incoming">
+            <div class="sender"> ewin </div>
+            <div class="msg_text"> hello<br>bwahahahahaa </div>
+            <div class="time"> 5:00pm </div>
+        </div>
+        
+        <div class="message outgoing">
+            <div class="sender"> me </div>
+            <div class="msg_text"> hi..... </div>
+            <div class="time"> 5:20pm </div>
+        </div>
+
+        <div class="message outgoing">
+            <div class="sender"> me </div>
+            <div class="msg_text"> hw r u?<br> ...wat's with the laughter? </div>
+            <div class="time"> 5:21pm </div>
+        </div>
+        
+        <div class="message +incoming">
+            <div class="sender"> ewin </div>
+            <div class="msg_text"> am gud..just super excited yo coming home tonyt </div>
+            <div class="time"> 5:24pm </div>
+        </div>
+        
+        <div id="mum"></div>
+        -->
+        
+        <div id = "messages_div" class = "has_border div_layout"></div>
+
+        <div id = "send_div" class = "has_border div_layout">
+            <input id = "entry" placeholder = "type message here"/>
+            <input type = "button" value = "send" id = "send_button" onclick = "display_users()">
+        </div>
+        
+          <div id = "info">
+            <div id = "info_text"></div>
+            <div id = "close_info" onclick = "dismiss_info()">OK</div>
+        </div>
+        
+        <div id = "user_list_div">
+            
+            <div id = "user_list"></div>
+            
+            <div>
+                <div id = "ok_list" onclick = "send_message()">Ok</div> 
+                <div id = "close_list" onclick = "cancel_users()">Cancel</div>
+            </div>
+            
+        </div>
+        
+        <div id = "login_div">
+            <input id = "username_entry" placeholder = "username">
+            <div id = "login_btn" onclick = "login()">Login</div>
+        </div>
+        
+    </body>       
+</html>    
